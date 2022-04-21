@@ -19,29 +19,29 @@ searchinput = document.querySelector('.searchinput');
 searchiconn = document.querySelector('.searchiconn');
 
 sort1.addEventListener('mouseover', ()=>{
-    sort1.src = "images/Group 73.png";
+    sort1.src = "images/Group73.png";
 })
 
 sort1.addEventListener('mouseout', ()=>{
-    sort1.src = "images/Group 38.png";
+    sort1.src = "images/Group38.png";
 })
 
 
 sort2.addEventListener('mouseover', ()=>{
-    sort2.src = "images/Group 91.png";
+    sort2.src = "images/Group91.png";
 })
 
 sort2.addEventListener('mouseout', ()=>{
-    sort2.src = "images/Group 90.png";
+    sort2.src = "images/Group90.png";
 })
 
 
 delete1.addEventListener('mouseover', ()=>{
-    delete1.src = "images/Group 70.png";
+    delete1.src = "images/Group70.png";
 })
 
 delete1.addEventListener('mouseout', ()=>{
-    delete1.src = "images/Group 56.png";
+    delete1.src = "images/Group56.png";
 })
 
 
@@ -79,7 +79,7 @@ dobavitbtn.addEventListener('click', ()=>{
         div.append(edit);
 
         imgg = document.createElement('img');
-        imgg.src = 'images/Group 56.png';
+        imgg.src = 'images/Group56.png';
         imgg.classList.add('delete2');
         div.append(imgg);
 
@@ -96,11 +96,11 @@ dobavitbtn.addEventListener('click', ()=>{
         for(let i=0; i<delete2.length; i++){
 
             delete2[i].addEventListener('mouseover', ()=>{
-                delete2[i].src = "images/Group 70.png"
+                delete2[i].src = "images/Group70.png"
             })
             
             delete2[i].addEventListener('mouseout', ()=>{
-                delete2[i].src = "images/Group 56.png"
+                delete2[i].src = "images/Group56.png"
             })
         }
 
@@ -111,7 +111,7 @@ dobavitbtn.addEventListener('click', ()=>{
         for(let i=0; i<editsss.length; i++){
 
             editsss[i].addEventListener('mouseover', ()=>{
-                editsss[i].src = "images/pencil (2).png"
+                editsss[i].src = "images/pencil(2).png"
             })
             
             editsss[i].addEventListener('mouseout', ()=>{
