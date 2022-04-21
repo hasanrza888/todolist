@@ -210,3 +210,10 @@
     align-items: baseline;
     width: 80%;
 }
+
+.sort2{
+    display: none;
+    margin-top: 16px;
+    cursor: pointer;
+    user-select: none;
+}

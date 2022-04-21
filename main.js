@@ -1,4 +1,6 @@
 sort1 = document.querySelector('.sort1');
+sort2 = document.querySelector('.sort2');
+
 delete1 = document.querySelector('.delete');
 input = document.querySelector('.input');
 dobavitbtn = document.querySelector('.dobavitbtn');
@@ -16,29 +18,33 @@ warningresult = document.querySelector('.warningresult');
 searchinput = document.querySelector('.searchinput');
 searchiconn = document.querySelector('.searchiconn');
 
-// sort1.addEventListener('mouseover', ()=>{
-//     sort1.src = "images/Group 73.png"
-// })
+sort1.addEventListener('mouseover', ()=>{
+    sort1.src = "images/Group 73.png";
+})
 
-// sort1.addEventListener('mouseout', ()=>{
-//     sort1.src = "images/Group 38.png"
-// })
+sort1.addEventListener('mouseout', ()=>{
+    sort1.src = "images/Group 38.png";
+})
+
+
+sort2.addEventListener('mouseover', ()=>{
+    sort2.src = "images/Group 91.png";
+})
+
+sort2.addEventListener('mouseout', ()=>{
+    sort2.src = "images/Group 90.png";
+})
+
 
 delete1.addEventListener('mouseover', ()=>{
-    delete1.src = "images/Group 70.png"
+    delete1.src = "images/Group 70.png";
 })
 
 delete1.addEventListener('mouseout', ()=>{
-    delete1.src = "images/Group 56.png"
+    delete1.src = "images/Group 56.png";
 })
 
-// iconreng.addEventListener('mouseover', ()=>{
-//     iconreng.style.color = 'red';
-// })
 
-// iconreng.addEventListener('mouseout', ()=>{
-//     iconreng.style.color = 'black';
-// })
 
 
 delete1.addEventListener('click', ()=>{
@@ -169,55 +175,59 @@ dobavitbtn.addEventListener('click', ()=>{
 
 
 
-
-
-sort1.addEventListener('click', ()=>{
-
-    ppp = document.querySelectorAll('p');
     
-    let datap = [];
-    for(let i=0; i<ppp.length; i++){
-        datap.push(ppp[i].innerText);
-            
-    }
-    let old = [...datap]
-    datap.sort();
 
-    let linkorigin=window.location.origin
+    sort1.addEventListener('click', ()=>{
+        console.log('1')
+        sort1.style.display = 'none';
+        sort2.style.display = 'block';
 
-    if(sort1.src == `${linkorigin}/images/Group%2038.png`){
-
-        sort1.src = `${linkorigin}/images/Group%2090.png`;
+        ppp = document.querySelectorAll('p');
+    
+        let datap = [];
+        for(let i=0; i<ppp.length; i++){
+            datap.push(ppp[i].innerText);
+                
+        }
         
-
-        sort1.innerText = '<';
-
-
+        datap.sort();
 
         for(let i=0; i<datap.length; i++){
             ppp[i].innerHTML = datap[i];
-            
-        }
-
-    }else if(sort1.src == `${linkorigin}/images/Group%2090.png`){
-
-        sort1.src = `${linkorigin}/images/Group%2038.png`;
                 
-        sort1.innerText = '>'        
+        }
 
-        for(let i=0; i<old.length; i++){
+    })
+    
+    sort2.addEventListener('click', ()=>{
+        console.log('2')
+        sort2.style.display = 'none';
+        sort1.style.display = 'block';
 
-            ppp[i].innerHTML = old.sort().reverse()[i];
+        ppp = document.querySelectorAll('p');
+    
+        let datap = [];
+        for(let i=0; i<ppp.length; i++){
+            datap.push(ppp[i].innerText);
+                
+        }
+        
+        datap.sort().reverse();
+
+        for(let i=0; i<datap.length; i++){
+
+            ppp[i].innerHTML = datap[i];
 
         }
 
+    }) 
+                
+              
 
-    }
 
 
 
 
-})
 
 
 
